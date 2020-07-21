@@ -1,5 +1,5 @@
 class Author
-  attr_accessor :name
+  attr_reader :name
 
   @@all = []
 
@@ -21,9 +21,20 @@ class Author
   def magazines
     articles.map do |article|
       article.magazine
-    end
+    end.uniq
   end
 
-  
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end
+
+  def topic_areas
+    magazines.map do |magazine|
+      magazine.category
+    end.uniq
+  end
+
+
+
 
 end
