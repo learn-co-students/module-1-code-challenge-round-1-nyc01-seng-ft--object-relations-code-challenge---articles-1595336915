@@ -8,6 +8,8 @@ end
 ###  WRITE YOUR TEST CODE HERE ###
 
 
+sedaris = new.Author("David Sedaris")
+
 
 
 
