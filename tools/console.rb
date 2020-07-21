@@ -20,14 +20,14 @@ m3 = Magazine.new("cd", "cat3")
 m4 = Magazine.new("de", "cat4")
 m5 = Magazine.new("ef", "cat5")
 
-at1 = Article.new(a1, m1, "t1")
-at2 = Article.new(a1, m1, "t2")
-at3 = Article.new(a1, m2, "t3")
-at4 = Article.new(a1, m2, "t4")
-at5 = Article.new(a2, m5, "t5")
-at6 = Article.new(a3, m4, "t6")
-at7 = Article.new(a4, m1, "t7")
-at8 = Article.new(a5, m1, "t8")
+at1 = Article.new("t1", a1, m1)
+at2 = Article.new("t2", a1, m1)
+at3 = Article.new("t3", a1, m2)
+at4 = Article.new("t4", a1, m2)
+at5 = Article.new("t5", a2, m5)
+at6 = Article.new("t6", a3, m4)
+at7 = Article.new("t7", a4, m1)
+at8 = Article.new("t8", a5, m1)
 
 
 ### DO NOT REMOVE THIS
