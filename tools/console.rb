@@ -13,12 +13,17 @@ mac=Author.new("mac")
 kev=Author.new("kev")
 
 dungeons=Magazine.new("dungeons","fantasy")
-kyle=Magazine.new("kyle","life")
 bball=Magazine.new("mj", "sport")
-krystal=Magazine.new("krystal","love")
+family=Magazine.new("family","lifestyles")
 
+# articles
+#author,magazine,title
+fly= Article.new(yas,dungeons, "flying high")
+kids=Article.new(ben, family, "kyle")
+mj=Article.new(kev, bball, "goat")
+wife=Article.new(kry,family,"ben")
 
-
+ben.add_article(dungeons,"shooter")
 
 
 ### DO NOT REMOVE THIS
