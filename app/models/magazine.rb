@@ -29,14 +29,6 @@ class Magazine
     end.uniq
   end
 
-  # def matching_author_article
-  #   contributors.select do |author|
-  #     author.articles.select do |article| 
-  #       article.magazine == self
-  #     end
-  #   end
-  # end
-
   def self.find_by_name(name)
     self.all.find do |zine|
       if zine.name == name
@@ -54,7 +46,6 @@ class Magazine
   def contributing_authors
     contributors.select do |author|
       if author.articles.select { |article| article.magazine == self}.count > 2
-        # binding.pry 
         author
       end
     end
