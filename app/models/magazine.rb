@@ -37,16 +37,22 @@ class Magazine
   end
 
 
+
+
   def author_article_hash
-    auth = {}
       all_articles.select do |i|
+        auth = {}
         if(auth[:author] != i)
-        auth[:author] => i
+        auth[:author] = i
         auth[:count] = 1
         else
           auth[:count] +=1
         end
-        
     end
+  end
+
+  def contributing_authors
+    author_article_hash.select |i|
+    binding.pry
   end
 end
