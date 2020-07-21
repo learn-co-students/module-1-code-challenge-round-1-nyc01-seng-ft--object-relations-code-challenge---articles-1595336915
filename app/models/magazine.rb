@@ -27,8 +27,12 @@ class Magazine
 
   def contributing_authors
     output= articles.map{|e|e.author} 
-    output= "There are no authors with more than 2 articles" if output.count < 3
-    output
+    h = Hash.new(0)
+    new_out=output.each { | v | h.store(v, h[v]+1) }
+    # output= "There are no authors with more than 2 articles" if output.count < 3
+    # #I need sort the array with authors. find authors that appear more than twice
+    # output
+    new_out
   end
 
   def self.all
