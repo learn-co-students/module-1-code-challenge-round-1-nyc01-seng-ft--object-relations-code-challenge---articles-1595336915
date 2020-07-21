@@ -22,6 +22,8 @@ fore = Article.new(mandy, lulu, "fore")
 gross = Article.new(ian, tasty, "gross")
 yum = Article.new(simon, tasty, "yum")
 final = Article.new(simon, lulu, "final")
+final2 = Article.new(simon, xiuxiu, "final2")
+final3 = Article.new(simon, xiuxiu, "final3")
 
 def reload
   load 'config/environment.rb'
