@@ -16,12 +16,12 @@ a4 = Author.new("Brian L")
 a5 = Author.new("Vincent Y")
 
 art1 = Article.new(a1, m1, "New show review")
-art2 = Article.new(a1, m4, "Celeb seen at")
+art2 = Article.new(a1, m1, "Celeb seen at")
 art3 = Article.new(a2, m2, "Soccer match")
 art4 = Article.new(a2, m2, "Superbowl article")
 art5 = Article.new(a2, m3, "Pandemic")
 art6 = Article.new(a3, m2, "NYY vs NYM")
-art7 = Article.new(a4, m3, "Breaking news election")
+art7 = Article.new(a4, m4, "Breaking news election")
 
 binding.pry
 
