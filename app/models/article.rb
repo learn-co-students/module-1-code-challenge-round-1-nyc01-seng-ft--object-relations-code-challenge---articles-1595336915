@@ -9,5 +9,16 @@ class Article
         @@all << self
     end
 
+    def self.all
+        @@all
+    end
+
+    # def articles
+    #     Article.all.filter { |piece| piece == self}
+    # end
+
+    # def author
+    #     articles.all.map { |piece| piece }
+    # end
 
 end
