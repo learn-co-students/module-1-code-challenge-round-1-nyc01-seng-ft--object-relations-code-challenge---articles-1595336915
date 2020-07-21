@@ -26,13 +26,18 @@ class Magazine
   end
 
   def contributing_authors
-    output= articles.map{|e|e.author} 
-    h = Hash.new(0)
-    new_out=output.each { | v | h.store(v, h[v]+1) }
+    x= articles.map{|e|e.author} 
+    freq=x.inject(Hash.new(0)){|h,v| h[v]+=1; h}
+    authors=freq.select{|k,v|v>2}
+    output= "There are no authors with more than 2 articles" if authors.empty?
+    output= authors if !authors.empty?
+    # freq=x.inject(Hash.new(0)){|hashing,keys}hashing[keys]+=1;hasging}|
+    # new_out=output.each { | v | h.store(v, h[v]+1) }
     # output= "There are no authors with more than 2 articles" if output.count < 3
     # #I need sort the array with authors. find authors that appear more than twice
     # output
-    new_out
+    # new_out
+    output
   end
 
   def self.all
