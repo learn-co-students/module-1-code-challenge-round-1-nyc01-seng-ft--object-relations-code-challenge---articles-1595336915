@@ -18,4 +18,8 @@ class Author
   def add_article(magazine, title)
     Article.new(self, magazine, title)
   end
+
+  def topic_areas
+    magazines.map(&:category).uniq
+  end
 end
