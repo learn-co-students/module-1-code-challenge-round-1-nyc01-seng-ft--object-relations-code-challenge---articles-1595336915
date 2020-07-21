@@ -1,4 +1,5 @@
 class Article
 
+a
 
 end
