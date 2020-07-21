@@ -25,7 +25,6 @@ a5 = Article.new(nazia, nike, "Diet")
 
 
 
-
 ### DO NOT REMOVE THIS
 binding.pry
 
