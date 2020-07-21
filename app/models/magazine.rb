@@ -10,7 +10,11 @@ class Magazine
     end
 
     def self.all
-    @@all
+      @@all
+    end
+
+    def contributors
+      #Returns an array of Author instances who have written for this magazine
     end
 
 end
