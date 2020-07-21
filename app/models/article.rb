@@ -1,10 +1,20 @@
+require 'pry'
 class Article
+
 @@all = []
 
-attr_accessor :author, :magazine
+attr_reader :author, :magazine, :title
 
-def initialize(author, magazine)
-    @author = author
-    @magazine = magazine
-    @@all << self
+    def initialize(author, magazine, title)
+        @author = author
+        @magazine = magazine
+        @title = title
+        @@all << self
+    end
+
+    def self.all
+        @@all
+    end
+
+
 end
