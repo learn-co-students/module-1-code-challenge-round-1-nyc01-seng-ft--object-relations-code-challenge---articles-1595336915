@@ -29,4 +29,21 @@ class Magazine
     articles.map(&:title)
   end
 
+  def contributing_authors
+    authors = []
+    contributor_count = contributors.each_with_object(Hash.new(0)) do |contributor, count|
+      contributor[count] += 1
+    end
+
+    contributor_count.each do |contributor, count|
+
+      if count > 2
+        authors << contributor
+      end
+      
+    end
+
+    authors
+  end
+
 end
