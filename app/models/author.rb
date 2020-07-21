@@ -11,5 +11,7 @@ class Author
     Article.all.select { |article| article.author == self }
   end
 
-  
+  def magazines
+    articles.map(&:magazine).uniq
+  end
 end
