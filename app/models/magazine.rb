@@ -25,4 +25,8 @@ class Magazine
     Magazine.all.find { |magazine| magazine.name == name }
   end
 
+  def article_titles
+    articles.map(&:title)
+  end
+
 end
