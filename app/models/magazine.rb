@@ -1,3 +1,4 @@
+# Has many articles
 class Magazine
   attr_accessor :name, :category
 
@@ -11,6 +12,11 @@ class Magazine
 
   def self.all
     @@all
+  end
+
+  # undefined method all, loop back
+  def contributors
+    self.all.map { |author| author.contributor }
   end
 
 end

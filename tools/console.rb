@@ -19,11 +19,10 @@ magazine2 = Magazine.new("Luxury Handbags", "Chanel")
 magazine3 = Magazine.new("Resident Advisor", "Innervisions")
 magazine4 = Magazine.new("Wired", "C")
 
-article1 = Article.new(author1, magazine1, "Latte Art")
-article2 = Article.new(author2, magazine2, "Chanel")
-article3 = Article.new(author3, magazine3, "Innervisions")
-article4 = Article.new(author4, magazine4, "C")
-
+article1 = Article.new(author1, magazine1, "How To Pour A Tulip")
+article2 = Article.new(author2, magazine2, "How To Spot A Fake Bag")
+article3 = Article.new(author3, magazine3, "Dixon")
+article4 = Article.new(author4, magazine4, "The Nuances of C")
 
 
 

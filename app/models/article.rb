@@ -1,3 +1,4 @@
+# Belongs to both Author and Magazine
 class Article
     attr_reader :author, :magazine, :title
     #reader since author, magazine, title can't be changed

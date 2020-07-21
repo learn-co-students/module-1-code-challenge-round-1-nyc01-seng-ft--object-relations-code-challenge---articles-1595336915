@@ -1,3 +1,4 @@
+# Has many articles
 class Author
   attr_reader :name
   #changed accessor to reader since name cannot be changed after initialization
@@ -13,4 +14,20 @@ class Author
   #   @@all
   # end
 
+  def articles
+    Article.all.select { |article| article.author == self }
+  end
+
+  def magazines
+    self.articles.map { |article| article.magazine }.uniq
+  end
+
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end
+
+  def topic_areas
+    
+  end
+  
 end
