@@ -36,10 +36,16 @@ class Magazine
     end
   end
 
-  def 
 
-  def contributing_authors
-      all_articles.max_by do |i|
+  def author_article_hash
+    auth = {}
+      all_articles.select do |i|
+        if(auth[:author] != i)
+        auth[:author] => i
+        auth[:count] = 1
+        else
+          auth[:count] +=1
+        end
         
     end
   end
